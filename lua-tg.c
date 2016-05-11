@@ -39,8 +39,8 @@
 #endif
 lua_State *luaState;
 
-//#include "interface.h"
-//#include "auto/constants.h"
+#include "interface.h"
+#include "auto/constants.h"
 #include <tgl/tgl.h>
 #include <tgl/tgl-queries.h>
 #include "interface.h"
@@ -645,7 +645,7 @@ void lua_chat_update (struct tgl_chat *C, unsigned flags) {
 //extern tgl_peer_t *Peers[];
 //extern int peer_num;
 
-#define MAX_LUA_COMMANDS 1000
+#define MAX_LUA_COMMANDS 10000
 
 struct lua_arg {
   int flags;
